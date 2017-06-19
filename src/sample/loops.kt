@@ -27,5 +27,29 @@ fun main(args: Array<String>) {
 		print("$i ")
 	println()
 	
+	//iterating over list
+	var numbers = listOf(2,4,6,8)
+	for(i in numbers){
+		print("$i ")
+	}
+	println()
+	
+	for((index, element) in numbers.withIndex())
+		println("$element at index $index")
+	
+	for(letter in 'a'..'z')
+	  print("$letter ")
+	println()
+	
+	//iterating over map
+	var names = LinkedHashMap<String, String>()
+	names["fName"] = "mukesh"
+	names["mName"] = "kumar"
+	names["lName"] = "gupta"
+	
+	for((name, value) in names){
+		println("$name : $value")
+	}
+	
 }
 
